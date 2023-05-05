@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# forum_run
+#
+# Clean, build and start server
+
+
+
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+
+
+if [ -f var/forum.sqlite3 ]; then
+    flask --app forum --debug run --host 0.0.0.0 --port 8000
+fi
+echo "Try: ./bin/forum_db create"
+exit 1
+

@@ -1,0 +1,27 @@
+
+    span.left{
+        left:10px;
+    }
+    span.right{
+        position:relative;
+        left:200px;
+    }
+    div.logname{
+        right:10px;
+        size:50px;
+    }
+    img.profile{
+        height:50px;
+        width: 40px;
+    }
+    img.post{
+        height:200px;
+        width:180px;
+    }
+    div.head{
+        block-size: 100px;
+    }
+    div.post{
+        position:relative;
+        left:59px;
+    }
